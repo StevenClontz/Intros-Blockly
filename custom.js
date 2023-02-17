@@ -13,7 +13,7 @@ const snake_case = (str = '') => {
 };
 
 
-
+//Variable Proposition
 blockJsonArray.push(
   {
     "type": "variable",
@@ -39,7 +39,7 @@ coqGenerator['variable'] = function (block) {
 }
 
 
-
+//Quantification of a Proposition
 blockJsonArray.push(
   {
     "type": "quantifier",
@@ -107,7 +107,7 @@ coqGenerator['quantifier'] = function (block) {
 }
 
 
-
+//Logical combination of two Propositions
 blockJsonArray.push(
   {
     "type": "combination",
@@ -195,7 +195,7 @@ coqGenerator['combination'] = function (block) {
 }
 
 
-
+//Logical negation 
 blockJsonArray.push(
   {
     "type": "negation",
@@ -231,7 +231,7 @@ coqGenerator['negation'] = function (block) {
 }
 
 
-
+//Theorem Block
 blockJsonArray.push(
   {
     "type": "theorem",
@@ -289,7 +289,7 @@ coqGenerator['theorem'] = function (block) {
 }
 
 
-
+//Introduction of Hypothesis
 blockJsonArray.push(
   {
     "type": "intro",
@@ -342,7 +342,7 @@ coqGenerator['intro'] = function (block) {
 }
 
 
-
+//Case destruction on an And Hypothesis
 blockJsonArray.push(
   {
     "type": "destruct",
@@ -381,24 +381,7 @@ blockJsonArray.push(
   }
 );
 
-blockJsonArray.push(
-  {
-    "type": "exact",
-    "message0": "This is exactly %1",
-    "args0": [
-      {
-        "type": "field_input",
-        "name": "ASSUMPTION",
-        "text": "H"
-      }
-    ],
-    "inputsInline": true,
-    "colour": 70,
-    "previousStatement": null,
-    "nextStatement": null,
-  }
-);
-
+//Law of Conjunction on two Propositions 
 blockJsonArray.push(
   {
     "type": "conj",
