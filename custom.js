@@ -381,7 +381,23 @@ blockJsonArray.push(
   }
 );
 
-
+blockJsonArray.push(
+  {
+    "type": "exact",
+    "message0": "This is exactly %1",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "ASSUMPTION",
+        "text": "H"
+      }
+    ],
+    "inputsInline": true,
+    "colour": 70,
+    "previousStatement": null,
+    "nextStatement": null,
+  }
+);
 
 blockJsonArray.push(
   {
